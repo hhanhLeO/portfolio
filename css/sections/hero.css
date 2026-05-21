@@ -1,0 +1,26 @@
+main {
+    width: 800px;
+    margin: auto;
+    margin-top: 64px;
+}
+
+#hero {
+    height: 100vh;
+    padding-top: 64px;
+
+    & h1 {
+        font-family: "JetBrains Mono", sans-serif;
+        font-size: 48px;
+    }
+}
+
+.typing {
+  width: 7ch;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--accent-purple);
+  
+  animation:
+    typing 3s steps(7) forwards,
+    blink 0.5s step-end infinite alternate;
+}

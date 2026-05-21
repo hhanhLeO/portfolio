@@ -1,0 +1,43 @@
+header {
+    height: 64px;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background-color: var(--bg-header);
+}
+
+header p {
+    font-family: "JetBrains Mono", sans-serif;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+header ul {
+    display: flex;
+    gap: 24px;
+
+    & li {
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    & li:hover {
+        background-color: var(--bg-hover);
+    }
+
+    & a {
+        color: var(--text-secondary);
+    }
+}
