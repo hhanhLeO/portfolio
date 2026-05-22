@@ -1,44 +1,243 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hanh Le</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <p>&lt;Hanh Le/&gt;</p>
-        <ul class="nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <p class="header-name gradient-text">&lt;Hanh Le/&gt;</p>
+      <div class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </div>
+      <div class="contact">
+        <a
+          href="https://github.com/hhanhLeO"
+          class="contact-card"
+          title="github.com/hhanhLeO"
+        >
+          <i class="devicon-github-original contact-icon"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/hanh-le-64548037a"
+          class="contact-card"
+          title="Hanh Le"
+        >
+          <i class="devicon-linkedin-plain contact-icon"></i>
+        </a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=lthhanh04@gmail.com"
+          class="contact-card"
+          title="lthhanh04@gmail.com"
+        >
+          <iconify-icon
+            icon="material-symbols:mail-outline"
+            noobserver
+            class="contact-icon"
+          ></iconify-icon>
+        </a>
+      </div>
     </header>
     <main>
-        <section id="hero">
-            <div class="container">
-                <h1>
-                    Hi, I'm 
-                    <br>
-                    <span class="typing">Hanh Le</span>
-                    <br>
-                    I'm a Software Engineer.
-                </h1>
+      <section id="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Hi, I'm
+            <br />
 
+            <span class="typing-container gradient-text"></span
+            ><span class="cursor"></span>
+          </h1>
+          <p class="hero-bio">
+            Software Engineer with a strong passion for cybersecurity,
+            full-stack development, and building reliable digital systems.
+          </p>
+        </div>
+        <div class="hero-visual">
+          <div class="code-window">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
             </div>
-        </section>
-        <section id="about">About</section>
-        <section id="skills">Skills</section>
-        <section id="projects">Projects</section>
-        <section id="contact">Contact</section>
+            <pre>
+<code>
+    <span class="keyword">const</span> <span class="variable">developer</span> = {
+        <span class="property">name</span>: <span class="string">"Hanh Le"</span>,
+        <span class="property">role</span>: <span class="string">"Software Engineer"</span>,
+        <span class="property">focus</span>: [
+            <span class="string">"Full-stack Development"</span>,
+            <span class="string">"Cybersecurity"</span>
+        ],
+        <span class="property">passion</span>: <span class="string">"Building secure and</span>
+                  <span class="string">modern applications"</span>
+    }
+</code>
+                        </pre>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <h1 class="title gradient-text">About Me</h1>
+        <div class="about-content">
+          <div class="about-info">
+            <h1 class="about-name">
+              Hi, I'm <span class="gradient-text">Hanh Le</span>
+            </h1>
+            <p class="about-description">
+              I'm an aspiring software engineer with a strong interest in
+              full-stack development and cybersecurity. I enjoy building modern
+              web applications, exploring secure system design, and continuously
+              learning new technologies to improve both performance and user
+              experience.
+            </p>
+            <div class="about-buttons">
+              <a
+                href="./assets/CV-HanhLe.pdf"
+                target="_blank"
+                class="btn btn-primary"
+                >View CV</a
+              >
+
+              <a href="#projects" class="btn btn-outline">View Projects</a>
+            </div>
+          </div>
+          <div class="about-img">
+            <img src="./assets/cat1.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <h1 class="title gradient-text">Skills</h1>
+        <div class="skills-content">
+          <div class="skills-item">
+            <div class="item-category">Tech Stack</div>
+            <div class="item-container tech-list">
+              <div class="tech-tag">
+                <i class="devicon-javascript-plain colored tech-icon"></i>
+                <span class="tech-name">JavaScript</span>
+              </div>
+              <div class="tech-tag">
+                <i class="devicon-typescript-plain colored tech-icon"></i>
+                <span class="tech-name">TypeScript</span>
+              </div>
+              <div class="tech-tag">
+                <i class="devicon-tailwindcss-original colored tech-icon"></i>
+                <span class="tech-name">TailwindCSS</span>
+              </div>
+              <div class="tech-tag">
+                <i class="devicon-react-original colored tech-icon"></i>
+                <span class="tech-name">React</span>
+              </div>
+              <div class="tech-tag">
+                <i class="devicon-express-original colored tech-icon"></i>
+                <span class="tech-name">ExpressJS</span>
+              </div>
+              <div class="tech-tag">
+                <iconify-icon
+                  icon="devicon:python"
+                  noobserver
+                  class="tech-icon"
+                ></iconify-icon>
+                <span class="tech-name">Python</span>
+              </div>
+              <div class="tech-tag">
+                <i class="devicon-fastapi-plain colored tech-icon"></i>
+                <span class="tech-name">FastAPI</span>
+              </div>
+              <div class="tech-tag">
+                <i class="devicon-postgresql-plain colored tech-icon"></i>
+                <span class="tech-name">PostgreSQL</span>
+              </div>
+              <div class="tech-tag">
+                <i class="devicon-git-plain colored tech-icon"></i>
+                <span class="tech-name"></span>
+              </div>
+              <div class="tech-tag">
+                <i class="devicon-docker-plain colored tech-icon"></i>
+                <span class="tech-name">Docker</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="skills-item">
+            <div class="item-category">Certificate</div>
+            <div class="item-container"></div>
+          </div> -->
+        </div>
+      </section>
+      <section id="projects">
+        <h1 class="title gradient-text">Projects</h1>
+        <div class="projects-content">
+          <div class="project-card">
+            <img
+              src="./assets/chat-app.avif"
+              alt="Chat app"
+              class="project-img"
+            />
+            <h3 class="project-title gradient-text">CipherChat</h3>
+            <p class="project-description">
+              A secure, browser-based instant messaging application with true
+              End-to-End Encryption (E2EE) - no registration, no login, no
+              message storage in server. All cryptographic operations happen
+              entirely in your browser.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/hhanhLeO/E2EE-Chat"
+                class="btn btn-outline"
+                >View source</a
+              >
+              <a
+                href="https://e2ee-chat-kappa.vercel.app/"
+                class="btn btn-primary"
+                >Live demo</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="./assets/zero-trust.webp"
+              alt="File Management app"
+              class="project-img"
+            />
+            <h3 class="project-title gradient-text">CortexSec</h3>
+            <p class="project-description">
+              CortexSec is an internal document management system built on a
+              Zero-Trust security model. Every access request is evaluated in
+              real-time against contextual signals before granting entry. No
+              session is implicitly trusted after login.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/hhanhLeO/CortexSec"
+                class="btn btn-outline"
+                >View source</a
+              >
+              <!-- <a href="#" class="btn btn-primary">Live demo</a> -->
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-        Footer
-    </footer>
-</body>
+    <footer>&copy; Hanh Le's Portfolio</footer>
+
+    <script src="index.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+  </body>
 </html>

@@ -1,26 +1,118 @@
 main {
-    width: 800px;
-    margin: auto;
-    margin-top: 64px;
+  width: 800px;
+  margin: auto;
+  margin-top: 64px;
 }
 
 #hero {
-    height: 100vh;
-    padding-top: 64px;
-
-    & h1 {
-        font-family: "JetBrains Mono", sans-serif;
-        font-size: 48px;
-    }
+  height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
 }
 
-.typing {
-  width: 7ch;
+.hero-content {
+  flex: 1;
+}
+
+.hero-title {
+  font-family: 'JetBrains Mono', sans-serif;
+  font-size: 32px;
+}
+
+.hero-bio {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.typing-container {
+  display: inline-block;
+  font-size: 64px;
+  font-weight: 800;
+  margin: 16px 0;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 64px;
+  vertical-align: text-bottom;
+  background-color: var(--accent-purple);
+  animation: blink 0.9s step-end infinite;
+}
+
+.hero-visual {
+  flex: 1;
+}
+
+.code-window {
+  width: 400;
+  margin: auto;
+  background-color: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
   overflow: hidden;
-  white-space: nowrap;
-  border-right: 3px solid var(--accent-purple);
-  
-  animation:
-    typing 3s steps(7) forwards,
-    blink 0.5s step-end infinite alternate;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+}
+
+.code-header {
+  height: 42px;
+  background-color: var(--bg-hover);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.red {
+  background-color: var(--dot-red);
+}
+
+.yellow {
+  background-color: var(--dot-yellow);
+}
+
+.green {
+  background-color: var(--dot-green);
+}
+
+code {
+  font-family: 'JetBrains Mono', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.keyword {
+  color: var(--code-keyword);
+}
+
+.variable {
+  color: var(--code-variable);
+}
+
+.property {
+  color: var(--code-property);
+}
+
+.string {
+  color: var(--code-string);
 }
